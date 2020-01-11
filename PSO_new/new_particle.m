@@ -1,5 +1,5 @@
 function ps=new_particle(pso)
-    ps=zeros(pso.particles,pso.N*2+1);
+    ps=zeros(pso.particles,pso.N*2+2);
     for i=1:pso.particles
         for j=2:pso.N-1
             ps(i,2*j-1)=(pso.x(2)-pso.x(1))*rand()+pso.x(1);
